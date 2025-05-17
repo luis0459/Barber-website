@@ -1,0 +1,37 @@
+#calendar-container {
+  padding: 20px;
+  background-color: #3d3b3b; /* f4f4f4 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 20px auto;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.day-cell {
+  padding: 20px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.day-cell.booked {
+  background-color: red;
+  color: white;
+}
+
+.day-cell.available {
+  background-color: green;
+  color: white;
+}
